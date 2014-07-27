@@ -1,0 +1,28 @@
+###CodeBook
+
+The file "HUA_AvgStd.txt" contains the following variables:
+
+"Subject" 
+	Identifier for participant in study 
+	Integer, 1-30
+"Activity" 
+	Physical activity recorded
+	Character, (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+
+The remaining 132 variables are of the form 
+	prefix.variable.suffix.direction
+For example:
+	"avg.tBodyAcc.mean.X" 
+	"avg.tBodyAcc.mean.Y" 
+	"avg.tBodyAcc.mean.Z" 
+	"avg.tBodyAcc.std.X" 
+	"avg.tBodyAcc.std.Y" 
+	"avg.tBodyAcc.std.Z" 
+	"std.tBodyAcc.std.X" 
+	"std.tBodyAcc.std.Y" 
+	"std.tBodyAcc.std.Z" 
+
+The prefix "svg" or "std" indicates whether the variable is the average or standard deviation of the following variable.  This is the mean/std for a given participant and activity.
+The variable indicates the particular measurement.  See documentation at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones for more information.
+The suffix indicates whether the variable is a mean or standard deviation. This is mean/std for a measurement.
+The direction (X,Y,Z) indicates the direction of motion measured.
